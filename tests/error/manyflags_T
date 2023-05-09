@@ -1,0 +1,3 @@
+#!/bin/bash
+
+"./anwrap" -qTibprdgB "0.1.0"
