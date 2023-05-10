@@ -4,4 +4,4 @@ hello_world# executable file name
 0.1.0# make support version
 tests# tests folder name
 [Supported versions]
-0.1.0# = 0.1.0, does have Makefile
+0.2.0# > 0.1.0, does have Makefile
