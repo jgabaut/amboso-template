@@ -11,3 +11,6 @@ hello_world_debug
 #
 #The * line tells git to ignore all files in the folder, but !.gitignore tells git to still include the .gitignore file. This way, your local repository and any other clones of the repository all get both the empty folder and the .gitignore it needs.
 #
+
+#We also want to ignore the dotfile dump if we ever use -c flag
+amboso_cfg.dot
