@@ -5,3 +5,4 @@ hello_world# executable file name
 tests# tests folder name
 [Supported versions]
 0.2.1# > 0.1.0, does have Makefile
+0.2.2# Use amboso 1.4.6
