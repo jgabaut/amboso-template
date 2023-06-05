@@ -18,7 +18,7 @@ hello_world: .hello_world.o .amboso.o
 	gcc .hello_world.o .amboso.o -o hello_world
 	@echo -e "\033[1;33mDone.\e[0m"
 
-check: init_submodules
+check:
 	@echo -e "Checking anwrap local version, expected ($(VERSION)):  got ($(RUN_VERSION)).\n"
 	test $(RUN_VERSION) = $(VERSION) || echo -en '\n    \033[1;31mFailed check for expected local version.\e[0m\n'
 	@echo -e "\033[1;32mDone.\e[0m"
