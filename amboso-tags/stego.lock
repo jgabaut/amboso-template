@@ -4,5 +4,4 @@ hello_world# executable file name
 0.1.0# make support version
 tests# tests folder name
 [Supported versions]
-0.2.1# > 0.1.0, does have Makefile
-0.2.2# Use amboso 1.4.6
+0.2.3# No colliding filenames. Use amboso 1.4.8-b. Has make check.
