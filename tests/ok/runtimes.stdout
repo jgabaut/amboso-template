@@ -1,7 +1,0 @@
-[VERS]    ^[[1;36m[DEBUG]    !NO! Backtrace ["set AMBOSO_TRACING="].^[[0m$
-$
-^[[1;35mTry uncommenting line 10 in "anwrap" to have some backtrace. Very WIP.^[[0m$
-1.4.6 e: 0 r: 0$
-[BASE][QUIET][BUILD][DELETE] 0.1.0 e: 1 r: 0$
-[BASE][BUILD][DELETE][VERB] 0.1.0 e: 1 r: 0$
-[ Bqip ] < [ [BASE][BUILD][DELETE][VERB] 0.1.0 ] FAIL:    timed [ 0.227135152 ] < [ 0.251973327 ].$
