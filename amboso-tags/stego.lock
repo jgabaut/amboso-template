@@ -4,4 +4,4 @@ hello_world# executable file name
 0.1.0# make support version
 tests# tests folder name
 [Supported versions]
-0.2.3# No colliding filenames. Use amboso 1.4.8-b. Has make check.
+0.2.3-b# No colliding filenames. Use amboso 1.4.8-b. Has make check.
