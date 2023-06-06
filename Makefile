@@ -1,6 +1,6 @@
 export SHELL=/bin/bash
 VERSION="1.4.8-b"
-TEMPLATE_VERSION="0.2.3"
+TEMPLATE_VERSION="0.2.3-b"
 ECHO_VERSION="./anwrap"
 RUN_VERSION := $(shell $(ECHO_VERSION) -v)
 
@@ -19,7 +19,7 @@ hello_world: .hello_world.o .amboso.o
 	@echo -e "\033[1;33mDone.\e[0m"
 
 check:
-	@echo -e "Checking anwrap local version, expected ($(VERSION)):  got ($(RUN_VERSION)).\n"
+	@echo -e "Checking anwrap local version, expected  ($(VERSION)):    got  ($(RUN_VERSION)).\n"
 	test $(RUN_VERSION) = $(VERSION) || echo -en '\n    \033[1;31mFailed check for expected local version.\e[0m\n'
 	@echo -e "\033[1;32mDone.\e[0m"
 
