@@ -17,6 +17,6 @@ if [[ $AMBOSO_TRACKING -gt 0 ]] ; then {
 } else {
 
   #printf "\033[1;36m[DEBUG]    !NO! Backtrace [\"set AMBOSO_TRACING=$AMBOSO_TRACING\"].\e[0m\n\n\033[1;35mTry uncommenting line 10 in \"anwrap\" to have some backtrace. Very WIP.\e[0m\n"
-  ./anvil -D "./amboso-tags/" "$@"
+  ./anvil -D "./amboso-tags/" "$@" 2>/dev/null
 }
 fi

@@ -1,8 +1,9 @@
 export SHELL=/bin/bash
 VERSION="1.4.8-b"
-TEMPLATE_VERSION="0.2.3-b"
-ECHO_VERSION="./anwrap"
-RUN_VERSION := $(shell $(ECHO_VERSION) -v)
+TEMPLATE_VERSION="0.2.4"
+COMMAND="./anwrap"
+RUN_VERSION := $(shell $(COMMAND) -v)
+TEST_VERSION := $(shell $(COMMAND) -tqs >/dev/null)
 
 all: hello_world
 	@echo -e "\033[1;32mEnd of build.\e[0m\n"
@@ -18,9 +19,14 @@ hello_world: .hello_world.o .amboso.o
 	gcc .hello_world.o .amboso.o -o hello_world
 	@echo -e "\033[1;33mDone.\e[0m"
 
-check:
-	@echo -e "Checking anwrap local version, expected  ($(VERSION)):    got  ($(RUN_VERSION)).\n"
-	test $(RUN_VERSION) = $(VERSION) || echo -en '\n    \033[1;31mFailed check for expected local version.\e[0m\n'
+verscheck: hello_world
+	@echo -e "Checking anwrap local version, expected  ($(VERSION)):    got  ($(RUN_VERSION))."
+	if test $(RUN_VERSION) = $(VERSION) ; then echo -e '\n\033[1;32mSuccess.\e[0m'; else echo -en '\n    \033[1;31mFailed check for expected local version.\e[0m\n'; fi
+	@echo -e "\033[1;32mDone.\e[0m"
+
+check: verscheck
+	@echo -e "\033[1;34mRunning ./anwrap -t.\e[0m"
+	if test $(TEST_VERSION) ; then echo -e '\n\033[1;32mSuccess.\e[0m'; else echo -en '\n    \033[1;31mFailed anvil test macro.\e[0m\n'; fi
 	@echo -e "\033[1;32mDone.\e[0m"
 
 distcheck: hello_world

@@ -19,6 +19,9 @@ jobs:
     - name: Install dependencies
       run: make
 
+    - name: Build and check version
+      run: make verscheck
+
     - name: Run check
       run: make check
 
