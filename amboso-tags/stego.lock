@@ -6,3 +6,4 @@ tests# tests folder name
 [Supported versions]
 0.2.3-b# No colliding filenames. Use amboso 1.4.8-b. Has make check.
 0.2.4# Uses anwrap -t for make check
+0.2.5# Use amboso 1.5.1
