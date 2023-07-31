@@ -1,6 +1,6 @@
 export SHELL=/bin/bash
-VERSION="1.4.8-b"
-TEMPLATE_VERSION="0.2.4"
+VERSION="1.6.0"
+TEMPLATE_VERSION="0.2.6"
 COMMAND="./anwrap"
 RUN_VERSION := $(shell $(COMMAND) -v)
 TEST_VERSION := $(shell $(COMMAND) -tqs >/dev/null)
