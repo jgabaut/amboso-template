@@ -3,7 +3,9 @@ hello_world.c# source file name
 hello_world# executable file name
 0.1.0# make support version
 tests# tests folder name
+1.0.0# autoconf and automake support version
 [Supported versions]
 0.2.3-b# No colliding filenames. Use amboso 1.4.8-b. Has make check.
 0.2.4# Uses anwrap -t for make check
 0.2.5# Use amboso 1.5.1
+0.2.6# Use amboso 1.6.0, expect autoconf compliance for versions >=1.0.0
