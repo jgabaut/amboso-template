@@ -1,2 +1,2 @@
 #!/bin/bash
-"./anvil" -D "./amboso-tags" -q 69
+"./anvil" -XD "./amboso-tags" -q 69
