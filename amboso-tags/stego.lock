@@ -10,3 +10,4 @@ tests# tests folder name
 0.2.5# Use amboso 1.5.1
 0.2.6# Use amboso 1.6.0, expect autoconf compliance for versions >=1.0.0
 0.3.0# Use amboso 1.6.5, expect autoconf compliance for versions >=0.3.0
+0.3.1# Fix build workflow

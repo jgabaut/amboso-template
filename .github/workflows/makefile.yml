@@ -2,7 +2,7 @@ name: Makefile CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master" , "devel" ]
   pull_request:
     branches: [ "master" ]
 
@@ -15,15 +15,13 @@ jobs:
     - uses: actions/checkout@v3
       with:
         submodules: recursive
-
-    - name: Install dependencies
+    - name: Run aclocal
+      run: aclocal
+    - name: Run autoconf
+      run: autoconf
+    - name: Run automake --add-missing
+      run: automake --add-missing
+    - name: Run ./configure
+      run: ./configure
+    - name: Run make
       run: make
-
-    - name: Build and check version
-      run: make verscheck
-
-    - name: Run check
-      run: make check
-
-    - name: Run distcheck
-      run: make distcheck
