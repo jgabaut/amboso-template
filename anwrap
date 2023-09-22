@@ -7,7 +7,7 @@
 #I tought this might be a nice motivation to fix the problem in the tool
 
 #Uncomment for trace
-#AMBOSO_TRACING=1
+AMBOSO_TRACING=1
 
 if [[ $AMBOSO_TRACKING -gt 0 ]] ; then {
 

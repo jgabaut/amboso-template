@@ -1,2 +1,2 @@
 #!/bin/bash
-"./anvil" -D "wrongdirectory" -q 0.1.0
+"./anvil" -XD "wrongdirectory" -q 0.1.0
