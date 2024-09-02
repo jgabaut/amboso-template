@@ -1,5 +1,15 @@
 # amboso-template
 
+# Note
+
+## This repo is for an out of date version of `amboso`.
+
+After `2.x`, `amboso` can prepare a new project with `init` subcommand.
+
+This template will stay as is in order to help older `amboso` versions to be used with a new project, if ever needed.
+
+A new branch named `v2` or something similare may be added at a later time to actually update this template, and it may be changed to be the default branch in the future.
+
 ## Table of Contents <a name = "index"></a>
 
 + [What is this thing?](#witt)
